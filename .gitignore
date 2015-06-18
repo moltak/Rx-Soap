@@ -1,0 +1,6 @@
+.idea/
+.gradle/
+gradle/
+LimoSoap.iml
+build/
+target/
