@@ -4,10 +4,12 @@ import com.squareup.okhttp.mockwebserver.MockWebServer;
 import net.moltak.soap.adapter.BaseSoapAdapter;
 import net.moltak.soap.mock.SoapDispatcher;
 import net.moltak.soap.mock.model.*;
+import net.moltak.soap.printer.DefaultSoapPrinter;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import rx.Observable;
+import rx.functions.Action1;
 
 import static junit.framework.TestCase.assertNotNull;
 import static org.hamcrest.CoreMatchers.is;
@@ -31,6 +33,35 @@ public class MockServerTest {
         soapAdapterFactory = new SoapAdapterFactory.Builder<>()
                 .setEndpoint(mockWebServer.getUrl("").toString())
                 .enableDebug();
+    }
+
+    /**
+     * This is a reference function.
+     */
+    public void howToUse() {
+        BaseSoapAdapter adapter = new SoapAdapterFactory.Builder<>()
+                .setEndpoint("http://soap-endpoint.com/")
+                .setWebserviceName("/WebServices/Soap.asmx")
+                .enableDebug() // Enable debug mode for print log
+                .setTimeout(5000) // Default timeout(5 seconds)
+                .setLogLevel(BaseSoapAdapter.LogLevel.FULL) // It prints logs.
+                .setSoapPrinter(new DefaultSoapPrinter()) // Default soap printer xml, http response codes
+                .build();
+
+        Observable<GetObjectResponse> o
+                = adapter.create(new GetObjectRequest("name"))
+                .async(GetObjectResponse.class);
+        o.subscribe(new Action1<GetObjectResponse>() {
+            @Override
+            public void call(GetObjectResponse getObjectResponse) {
+                // There are results.
+            }
+        }, new Action1<Throwable>() {
+            @Override
+            public void call(Throwable throwable) {
+
+            }
+        });
     }
 
     @After

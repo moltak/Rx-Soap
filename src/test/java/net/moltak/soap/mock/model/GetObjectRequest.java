@@ -18,7 +18,7 @@ public class GetObjectRequest implements BaseRequest {
 
     @Override
     public String getRequestName() {
-        return "get_info";
+        return "get_info"; // This is an action name for soap request.
     }
 
     @Override
