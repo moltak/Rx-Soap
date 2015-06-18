@@ -1,6 +1,29 @@
-# Rx-Soap [![Build Status](https://travis-ci.org/moltak/Rx-Soap.svg?branch=master)](https://travis-ci.org/moltak/Rx-Soap)
-Rx-Soap library for reactive java and android.
+# Rx-Soap [![Build Status](https://travis-ci.org/moltak/Rx-Soap.svg?branch=master)](https://travis-ci.org/moltak/Rx-Soap) ![Release](https://img.shields.io/github/tag/moltak/rx-soap.svg?label=JitPack)
+##### Rx-Soap library for reactive java and android.
 
+Add it to your build.gradle with:
+```gradle
+repositories {
+    maven { url "https://jitpack.io" }
+}
+```
+
+```gradle
+dependencies {
+	compile 'com.github.moltak:rx-soap:0.1'
+}
+```
+
+
+##### Run tests using gradle
+``` bash
+./gradlew test
+```
+
+##### Run tests using mvn
+``` bash
+mvn test
+```
 
 License
 -------
