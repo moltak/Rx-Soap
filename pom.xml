@@ -5,8 +5,24 @@
   <artifactId>rx-soap</artifactId>
   <packaging>jar</packaging>
   <version>0.1-SNAPSHOT</version>
-  <name>rx-soap</name>
-  <url>http://maven.apache.org</url>
+  <name>Rx-soap</name>
+  <description>A soap library for reactive java.</description>
+  <url>https://github.com/moltak/Rx-Soap</url>
+
+  <scm>
+    <url>https://github.com/moltak/Rx-Soap</url>
+    <connection>scm:git:git://github.com/moltak/Rx-Soap.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/moltak/Rx-Soap.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <repositories>
     <repository>
@@ -14,7 +30,7 @@
       <name>googlecode.com</name>
       <url>http://ksoap2-android.googlecode.com/svn/m2-repo</url>
     </repository>
-  </repositories>  
+  </repositories>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
