@@ -5,7 +5,7 @@
   <artifactId>rx-soap</artifactId>
   <packaging>jar</packaging>
   <version>0.1-SNAPSHOT</version>
-  <name>Rx-soap</name>
+  <name>Rx-Soap</name>
   <description>A soap library for reactive java.</description>
   <url>https://github.com/moltak/Rx-Soap</url>
 
@@ -78,7 +78,7 @@
   </dependencies>
 
   <build>
-    <finalName>soap</finalName>
+    <finalName>Rx-Soap</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
