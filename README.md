@@ -1,4 +1,4 @@
-# Rx-Soap
+# Rx-Soap [![Build Status](https://travis-ci.org/moltak/Rx-Soap.svg?branch=master)](https://travis-ci.org/moltak/Rx-Soap)
 Rx-Soap library for reactive java and android.
 
 
