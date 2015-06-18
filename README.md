@@ -1,4 +1,4 @@
-# Rx-Soap [![Build Status](https://travis-ci.org/moltak/Rx-Soap.svg?branch=master)](https://travis-ci.org/moltak/Rx-Soap) [![Release](https://img.shields.io/github/tag/moltak/rx-soap.svg?label=Release)](https://jitpack.io/#moltak/rx-soap)
+# Rx-Soap [![Build Status](https://travis-ci.org/moltak/Rx-Soap.svg?branch=master)](https://travis-ci.org/moltak/Rx-Soap) [![Release](https://img.shields.io/github/tag/moltak/rx-soap.svg?label=Release)](https://jitpack.io/#moltak/rx-soap) [![codecov.io](http://codecov.io/github/moltak/Rx-Soap/coverage.svg?branch=master)](http://codecov.io/github/moltak/Rx-Soap?branch=master)
 ### Rx-Soap library for reactive java and android.
 
 Add it to your build.gradle with:
