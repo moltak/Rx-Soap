@@ -14,7 +14,7 @@ repositories {
 }
 
 apply plugin: 'java'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
 
 group='com.github.moltak'
 
@@ -22,6 +22,7 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 version = '1.0'
+compileJava.options.encoding = 'UTF-8'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
